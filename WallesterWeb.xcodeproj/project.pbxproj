@@ -13,7 +13,18 @@
 		1DD9E1642497F980006C40E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9E1632497F980006C40E2 /* Assets.xcassets */; };
 		1DD9E1672497F980006C40E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9E1662497F980006C40E2 /* Preview Assets.xcassets */; };
 		1DD9E16A2497F980006C40E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9E1682497F980006C40E2 /* LaunchScreen.storyboard */; };
+		1DD9E1782497F9A4006C40E2 /* WallesterWebUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD9E1772497F9A4006C40E2 /* WallesterWebUITests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DD9E17A2497F9A4006C40E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DD9E1522497F97D006C40E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DD9E1592497F97D006C40E2;
+			remoteInfo = WallesterWeb;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1DD9E15A2497F97D006C40E2 /* WallesterWeb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallesterWeb.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		1DD9E1662497F980006C40E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1DD9E1692497F980006C40E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DD9E16B2497F980006C40E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DD9E1752497F9A4006C40E2 /* WallesterWebUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallesterWebUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD9E1772497F9A4006C40E2 /* WallesterWebUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallesterWebUITests.swift; sourceTree = "<group>"; };
+		1DD9E1792497F9A4006C40E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1DD9E1572497F97D006C40E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DD9E1722497F9A4006C40E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				1DD9E15C2497F97D006C40E2 /* WallesterWeb */,
+				1DD9E1762497F9A4006C40E2 /* WallesterWebUITests */,
 				1DD9E15B2497F97D006C40E2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				1DD9E15A2497F97D006C40E2 /* WallesterWeb.app */,
+				1DD9E1752497F9A4006C40E2 /* WallesterWebUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +98,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		1DD9E1762497F9A4006C40E2 /* WallesterWebUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1DD9E1772497F9A4006C40E2 /* WallesterWebUITests.swift */,
+				1DD9E1792497F9A4006C40E2 /* Info.plist */,
+			);
+			path = WallesterWebUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,6 +127,24 @@
 			productReference = 1DD9E15A2497F97D006C40E2 /* WallesterWeb.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1DD9E1742497F9A4006C40E2 /* WallesterWebUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DD9E17C2497F9A4006C40E2 /* Build configuration list for PBXNativeTarget "WallesterWebUITests" */;
+			buildPhases = (
+				1DD9E1712497F9A4006C40E2 /* Sources */,
+				1DD9E1722497F9A4006C40E2 /* Frameworks */,
+				1DD9E1732497F9A4006C40E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DD9E17B2497F9A4006C40E2 /* PBXTargetDependency */,
+			);
+			name = WallesterWebUITests;
+			productName = WallesterWebUITests;
+			productReference = 1DD9E1752497F9A4006C40E2 /* WallesterWebUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -107,6 +157,10 @@
 				TargetAttributes = {
 					1DD9E1592497F97D006C40E2 = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					1DD9E1742497F9A4006C40E2 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 1DD9E1592497F97D006C40E2;
 					};
 				};
 			};
@@ -124,6 +178,7 @@
 			projectRoot = "";
 			targets = (
 				1DD9E1592497F97D006C40E2 /* WallesterWeb */,
+				1DD9E1742497F9A4006C40E2 /* WallesterWebUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +191,13 @@
 				1DD9E16A2497F980006C40E2 /* LaunchScreen.storyboard in Resources */,
 				1DD9E1672497F980006C40E2 /* Preview Assets.xcassets in Resources */,
 				1DD9E1642497F980006C40E2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DD9E1732497F9A4006C40E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +214,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1DD9E1712497F9A4006C40E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DD9E1782497F9A4006C40E2 /* WallesterWebUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DD9E17B2497F9A4006C40E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DD9E1592497F97D006C40E2 /* WallesterWeb */;
+			targetProxy = 1DD9E17A2497F9A4006C40E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1DD9E1682497F980006C40E2 /* LaunchScreen.storyboard */ = {
@@ -320,6 +398,44 @@
 			};
 			name = Release;
 		};
+		1DD9E17D2497F9A4006C40E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				INFOPLIST_FILE = WallesterWebUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.WallesterWebUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WallesterWeb;
+			};
+			name = Debug;
+		};
+		1DD9E17E2497F9A4006C40E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L8W86DZDY2;
+				INFOPLIST_FILE = WallesterWebUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ri.WallesterWebUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WallesterWeb;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -337,6 +453,15 @@
 			buildConfigurations = (
 				1DD9E16F2497F980006C40E2 /* Debug */,
 				1DD9E1702497F980006C40E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DD9E17C2497F9A4006C40E2 /* Build configuration list for PBXNativeTarget "WallesterWebUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DD9E17D2497F9A4006C40E2 /* Debug */,
+				1DD9E17E2497F9A4006C40E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
